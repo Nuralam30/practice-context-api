@@ -12,10 +12,12 @@ function App() {
 
   return (
     <CategoryContext.Provider value={[count, setCount]}>
-      <h1>app js : {count}</h1>
-      <Header></Header>
-      <Home></Home>
-      <Shipment></Shipment>
+      <div className='App'>
+        <h1>app js : {count}</h1>
+        <Header></Header>
+        <Home></Home>
+        <Shipment></Shipment>
+      </div>
     </CategoryContext.Provider>
   );
 }
