@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+const Header = (props) => {
 
-const Header = () => {
+    const {count, setCount} = props;
+
     return (
         <div>
-            <h1>This is header</h1>
+            <h1>This is header : {count}</h1>
+            <button onClick={ () => setCount(count + 1)}>Increamrnt</button>
         </div>
     );
 };
